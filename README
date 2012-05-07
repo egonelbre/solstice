@@ -1,0 +1,4 @@
+Solstice
+========
+
+Game framework based on entity-component-system architecture. Allows easy compositing between different physics/scripting/graphics engines.
