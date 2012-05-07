@@ -1,0 +1,115 @@
+<file>
+
+<template id="objects.beach_ball">
+    <component type="components.Texture">
+        <image>textures/objects/beach_ball.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>42.0000003, 43.99999984</anchor>
+        <isDynamic>true</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="CIRCLE">
+            <density>1</density>
+            <restitution>1</restitution>
+            <friction>0.5</friction>
+            <isSensor>false</isSensor><circle radius="39.10846128253" x="-0.493671192188259" y="-2.50632894781174" />
+        </fixture>
+        
+    </component>
+</template>
+
+<template id="objects.banana">
+    <component type="components.Texture">
+        <image>textures/objects/banana.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>58.0000003, 37</anchor>
+        <isDynamic>true</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="POLYGON">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>false</isSensor>
+            <polygon>  47.757926640918, -16.1421852111816  , 36.9471203665039, -3.45123291015625  , 33.0693280081055, -19.079906463623  , 48.5804898123047, -29.185661315918  , 52.8108059744141, -27.7755584716797 </polygon>
+            <polygon>  36.9471203665039, -3.45123291015625  , 18.6157452444336, 8.88719177246094  , -3.12338668305664, 11.7074030637741  , 10.6251446584961, -12.4994125366211  , 33.0693280081055, -19.079906463623 </polygon>
+            <polygon>  -3.12338668305664, 11.7074030637741  , -29.0928328653076, 2.07168102264404  , -18.7520564218262, -14.027027130127  , 10.6251446584961, -12.4994125366211 </polygon>
+            <polygon>  -29.0928328653076, 2.07168102264404  , -47.4242070337036, -17.6697998046875  , -42.2538197656372, -23.4277305603027  , -18.7520564218262, -14.027027130127 </polygon>
+            <polygon>  -49.2573435922363, -35.813159942627  , -42.2538197656372, -23.4277305603027  , -47.4242070337036, -17.6697998046875  , -56.5898945947388, -32.4054069519043  , -53.2996481080749, -35.6486473083496 </polygon>
+        </fixture>
+        
+    </component>
+</template>
+
+<template id="objects.construction">
+    <component type="components.Texture">
+        <image>textures/objects/construction.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>46, 103.99999996</anchor>
+        <isDynamic>false</isDynamic>
+        <isKinematic>false</isKinematic>
+        
+    </component>
+</template>
+
+<template id="objects.nesw">
+    <component type="components.Texture">
+        <image>textures/objects/nesw.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>74.0041935, 74.9500005</anchor>
+        <isDynamic>true</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="POLYGON">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>false</isSensor>
+            <polygon>  35.1781948056641, -34.551677440918  , 35.0104854550781, 34.7984278447266  , -33.9622661623535, 35.0080721623535  , -34.1719066652832, -34.7613179438477 </polygon>
+        </fixture>
+        <fixture type="CIRCLE">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <sensorId>North</sensorId>
+            <circle radius="24.3351984110727" x="0.901467216865214" y="-50.1701268268594" />
+        </fixture>
+        <fixture type="CIRCLE">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <sensorId>South</sensorId>
+            <circle radius="23.6919593325739" x="0.901467216865186" y="49.8298735730041" />
+        </fixture>
+        <fixture type="CIRCLE">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <sensorId>West</sensorId>
+            <circle radius="24.2642095369822" x="-49.412998393129" y="-0.484592036990151" />
+        </fixture>
+        <fixture type="CIRCLE">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <sensorId>East</sensorId>
+            <circle radius="23.5489652298612" x="51.3626833115688" y="-0.84098612840792" />
+        </fixture>
+        
+    </component>
+</template>
+
+</file>

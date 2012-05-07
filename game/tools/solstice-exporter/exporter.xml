@@ -1,0 +1,147 @@
+<exporter>
+	<name>solstice</name>
+	<displayName>Solstice Exporter</displayName>
+	<description>Creates Solstice templates</description>
+
+	<version>1.0</version>
+    <yAxisDirection>down</yAxisDirection>
+	<physicsEngine>box2d</physicsEngine>
+	
+    <template>template.txt</template>
+	<fileExtension>xml</fileExtension>
+	
+	<!-- anchorpoint -->
+	<anchorPoint>
+	    <!-- does the system use anchor ponits ? -->
+		<enabled>yes</enabled>
+		
+		<!-- default of the anchor point -->
+		<relX>0.0</relX>
+		<relY>0.0</relY>
+	</anchorPoint>
+	
+	<!-- origin of the coordinate system -->
+    <origin>
+        <!-- may be: anchorPoint or fixed -->
+        <type>anchorPoint</type>
+    </origin>
+    
+	<global>
+		<parameter>
+			<name>namespace</name>
+			<displayName>Namespace</displayName>
+			<description>Namespace for these components</description>
+			<type>string</type>
+		</parameter>
+	</global>
+	
+	<!-- 
+	    body parameters can be set for each body 
+	    see above for description
+	    parameters will be available as {{<body>.<name>}}
+	    
+	    {% for body in bodies %}
+	        ...
+	            {{body.<name>}}
+	        ...
+	    {% endfor %}
+	-->
+	<body>
+		<parameter>
+			<name>fixedRotation</name>
+			<displayName>Fixed rotation</displayName>
+			<type>bool</type>
+			<default>false</default>
+		</parameter>
+		<parameter>
+			<name>isDynamic</name>
+			<displayName>Dynamic</displayName>
+			<type>bool</type>
+			<default>false</default>
+		</parameter>
+        <parameter>
+			<name>isKinematic</name>
+			<displayName>Kinematic</displayName>
+			<type>bool</type>
+			<default>false</default>
+		</parameter>
+        <parameter>
+			<name>hasAnimations</name>
+			<displayName>Has Animations</displayName>
+			<type>bool</type>
+			<default>false</default>
+		</parameter>
+        <parameter>
+			<name>atlas</name>
+			<displayName>Animation Atlas</displayName>
+			<type>string</type>
+			<default></default>
+		</parameter>
+        <parameter>
+			<name>sprites</name>
+			<displayName>Animation Sprites</displayName>
+			<type>string</type>
+			<default></default>
+		</parameter>
+        <parameter>
+			<name>defaultAnimation</name>
+			<displayName>Default Animation</displayName>
+			<type>string</type>
+			<default></default>
+		</parameter>
+	</body>
+	
+	<!-- 
+	    fixture parameterscan be set for each polygon 
+	    see above for description
+	    parameters will be available as {{<fixture>.<name>}}
+	    
+	    {% for body in bodies %}
+	        {% for fixture in body.fixtures %}
+	            ...
+	            {{fixture.<name>}}
+	            ...
+    	    {% endfor %}
+	    {% endfor %}
+	-->
+	<fixture>
+		<parameter>
+			<name>density</name>
+			<displayName>Density</displayName>
+			<type>float</type>
+			<min>-1000</min>
+			<max>1000</max>
+			<default>1.0</default>
+		</parameter>
+		<parameter>
+			<name>restitution</name>
+			<displayName>Restitution</displayName>
+			<type>float</type>
+			<min>0</min>
+			<max>1000</max>
+			<default>0.2</default>
+		</parameter>
+		<parameter>
+			<name>friction</name>
+			<displayName>Friction</displayName>
+			<type>float</type>
+			<min>0</min>
+			<max>1000</max>
+			<default>0.5</default>
+		</parameter>
+		<parameter>
+			<name>isSensor</name>
+			<displayName>Is Sensor</displayName>
+			<type>bool</type>
+			<default>false</default>
+		</parameter>
+		
+		<parameter>
+			<name>sensorId</name>
+			<displayName>SensorId</displayName>
+			<type>string</type>
+			<default></default>
+		</parameter>
+	</fixture>
+</exporter>
+

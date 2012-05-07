@@ -1,0 +1,51 @@
+<file>
+
+<template id="logic.margin">
+    <component type="components.Texture">
+        <image>textures/logic/margin.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>25, 25</anchor>
+        <isDynamic>false</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="CIRCLE">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor><circle radius="11.1728501756174" x="-0.0234732837757008" y="-0.164320150180878" />
+        </fixture>
+        
+    </component>
+
+    <component type="components.Margin">
+    </component>    
+</template>
+
+<template id="logic.girlSpawner">
+    <component type="components.Texture">
+        <image>textures/logic/spawner.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>19.72, 19.71830913269</anchor>
+        <isDynamic>false</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="POLYGON">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <polygon>  12.862160949707, 13.1455405072025  , -14.6495773506165, 12.9577467755131  , -14.3678872299194, -14.4600922747799  , 13.7072308349609, -14.4600922747799 </polygon>
+        </fixture>
+        
+    </component>
+    <component type="components.Spawner">
+        <toSpawn>characters.girl</toSpawn>
+        <limit>1</limit>
+    </component>        
+</template>
+
+</file>

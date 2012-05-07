@@ -1,0 +1,4 @@
+game/obj/**
+game/bin/**
+\.DS.*
+.*\.pyo

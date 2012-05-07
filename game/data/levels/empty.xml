@@ -1,0 +1,17 @@
+<world id="empty" title="Empty World">
+  <system type="systems.Box2DWorld" />
+  <system type="systems.Camera"/>
+  <system type="systems.CodeRunner"/>
+  <system type="systems.StateMachineRunner"/>
+  <system type="systems.LevelLimits"/>
+  
+  <entity name="background">
+    <properties>
+        <x>-1000</x>
+        <y>-1000</y>
+    </properties>
+    <component type="components.Texture">
+        <image>textures/backgrounds/level1.png</image>
+    </component>
+  </entity>
+</world>

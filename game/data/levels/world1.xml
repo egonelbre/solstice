@@ -1,0 +1,105 @@
+<world id="new_world" title="New World">
+  <system type="systems.Box2DWorld">
+    <gravity>9.8</gravity>
+  </system>
+  <system type="systems.Camera"/>
+  <system type="systems.CodeRunner"/>
+  <system type="systems.StateMachineRunner"/>
+  <system type="systems.LevelLimits"/>
+  <entity name="background">
+    <properties>
+      <x>-1000</x>
+      <y>-1000</y>
+      <rotation>0</rotation>
+    </properties>
+    <component type="components.Texture">
+      <image>textures/backgrounds/level1.png</image>
+      <y>0</y>
+      <x>0</x>
+    </component>
+  </entity>
+  <entity name="xyz_big.branch01_3" template="big.branch01">
+    <properties>
+      <x>-431.99716834193566</x>
+      <y>174.00212374354882</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_characters.girl_3" template="characters.girl">
+    <properties>
+      <x>-216.44753295183142</x>
+      <y>-170.54229952330675</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-1009.4763114715364</x>
+      <y>225206.1809575246</y>
+      <rotation>-1.2411353031604442</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_platforms.platform01_3" template="platforms.platform01">
+    <properties>
+      <x>-393.4067454169036</x>
+      <y>-75.07762317379809</y>
+      <rotation>0.4816349551965131</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_platforms.platform01_3" template="platforms.platform01">
+    <properties>
+      <x>-207.0064790678528</x>
+      <y>-63.001971890216005</y>
+      <rotation>-0.4748972051555045</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-280.2736717283416</x>
+      <y>-78.20839077971041</y>
+      <rotation>0.09695981960491573</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-320.3155549202896</x>
+      <y>-89.13418747953179</y>
+      <rotation>-0.3970659556306167</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-367.1296328380959</x>
+      <y>-113.55451025488992</y>
+      <rotation>-0.39897605293267896</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-323.00797044081946</x>
+      <y>-122.62518099677243</y>
+      <rotation>1.700146861946602</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-351.9384601633709</x>
+      <y>-154.7687783902189</y>
+      <rotation>0.7170030341483841</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-248.235696094866</x>
+      <y>-89.78133421928923</y>
+      <rotation>-2.0845704609062468</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_acorns.acorn01_3" template="acorns.acorn01">
+    <properties>
+      <x>-278.6716363219705</x>
+      <y>-112.61970804405934</y>
+      <rotation>1.8932635972401421</rotation>
+    </properties>
+  </entity>
+</world>

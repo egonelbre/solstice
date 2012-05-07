@@ -1,0 +1,24 @@
+<file>
+
+<template id="platforms.platform01">
+    <component type="components.Texture">
+        <image>textures/platforms/platform01.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>156, 22</anchor>
+        <isDynamic>false</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="POLYGON">
+            <density>2</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>false</isSensor>
+            <polygon>  -143, -22  , 131, -22  , 143, -12.5  , 142.75, 14  , -155.75, 14.75  , -155.75, -12.25 </polygon>
+        </fixture>
+        
+    </component>
+</template>
+
+</file>

@@ -1,0 +1,335 @@
+<world id="construction" title="Construction">
+  <system type="systems.Box2DWorld">
+    <gravity>9.8</gravity>
+  </system>
+  <system type="systems.Camera"/>
+  <system type="systems.CodeRunner"/>
+  <system type="systems.StateMachineRunner"/>
+  <system type="systems.LevelLimits"/>
+  
+  <entity name="background">
+    <component type="components.Texture">
+      <image>textures/backgrounds/level1.png</image>
+      <x>-512</x>
+      <y>-512</y>
+    </component>
+    <component type="components.Layer">
+      <fixed>true</fixed>
+    </component>
+  </entity>
+  <entity name="ed_branches_1.home_55412.935791537166" template="branches_1.home">
+    <properties>
+      <x>-987.6666666666672</x>
+      <y>981.0000000000006</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.kollid_oksaga_40414.63965550065" template="branches_1.kollid_oksaga">
+    <properties>
+      <x>-2546.3333333333303</x>
+      <y>1035.6666666666672</y>
+      <rotation>0.005733495352254316</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.lehed_46143.16849038005" template="branches_1.lehed">
+    <properties>
+      <x>-978.333333333332</x>
+      <y>435.6666666666675</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.4_37920.43384164572" template="branches_1.4">
+    <properties>
+      <x>1014.3333333333368</x>
+      <y>365.3333333333349</y>
+      <rotation>2.3124268383970925</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.3_26200.278103351593" template="branches_1.3">
+    <properties>
+      <x>948.9999999999998</x>
+      <y>809.3333333333343</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.lehed_68595.45037150383" template="branches_1.lehed">
+    <properties>
+      <x>993.6666666666672</x>
+      <y>-210.3333333333321</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_objects.construction_43373.69101122022" template="objects.construction">
+    <properties>
+      <x>730.3333333333333</x>
+      <y>-325.0000000000009</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_platforms.platform01_13172.679208219051" template="platforms.platform01">
+    <properties>
+      <x>86.10241168258898</x>
+      <y>-720.8483265515711</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_platforms.platform01_31746.79894000292" template="platforms.platform01">
+    <properties>
+      <x>-565.1429727395297</x>
+      <y>-464.5870262805377</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_platforms.platform01_31601.96729004383" template="platforms.platform01">
+    <properties>
+      <x>-192.36820127859923</x>
+      <y>-625.1774411170525</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.6_20854.024915024638" template="branches_1.6">
+    <properties>
+      <x>-772.666666666666</x>
+      <y>-271.33333333333263</y>
+      <rotation>-2.5838838099610015</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.lehed_49165.199464187026" template="branches_1.lehed">
+    <properties>
+      <x>-2428.3333333333367</x>
+      <y>-130.33333333333215</y>
+      <rotation>1.3201786256958836</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_characters.girl_32665.1010196656" template="characters.girl">
+    <properties>
+      <x>-1136.0582003025809</x>
+      <y>328.8250857515569</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.3_3213.6290799826384" template="branches_1.3">
+    <properties>
+      <x>-2567.7396139242246</x>
+      <y>-373.0163216503566</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_platforms.platform01_12214.595032855868" template="platforms.platform01">
+    <properties>
+      <x>510.471124931419</x>
+      <y>-408.5512219546056</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_platforms.platform01_51085.115224123" template="platforms.platform01">
+    <properties>
+      <x>240.8842370462926</x>
+      <y>-587.5924504106342</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_branches_1.lehed_58661.60276345909" template="branches_1.lehed">
+    <properties>
+      <x>-2627.192235587108</x>
+      <y>-435.8857606501824</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_logic.margin_79969.67085637152" template="logic.margin">
+    <properties>
+      <x>-358.72242350408214</x>
+      <y>896.1392884562807</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_logic.girlSpawner_78280.30516393483" template="logic.girlSpawner">
+    <properties>
+      <x>-1066.8324862574807</x>
+      <y>275.04275036325555</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_4282.970726490021" template="acorns.acorn01">
+    <properties>
+      <x>-2026.142768651081</x>
+      <y>-358.02522762936303</y>
+      <rotation>0.12707283261297353</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_64157.45969861746" template="acorns.acorn02">
+    <properties>
+      <x>-523.835835331631</x>
+      <y>-499.70053378920875</y>
+      <rotation>1.733523701435277</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_69633.65757837892" template="acorns.acorn01">
+    <properties>
+      <x>-485.43915234790416</x>
+      <y>-507.166555480489</y>
+      <rotation>0.4145068745847864</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_52206.996316090226" template="acorns.acorn02">
+    <properties>
+      <x>-11.169012530390091</x>
+      <y>-930.2411179863672</y>
+      <rotation>1.776191715984662</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_96788.28613832593" template="acorns.acorn01">
+    <properties>
+      <x>127.48567602195658</x>
+      <y>-923.8416708224128</y>
+      <rotation>-1.899846021635236</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_11707.1982473135" template="acorns.acorn00">
+    <properties>
+      <x>54.95860816380605</x>
+      <y>-930.2411179863672</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_34752.15523503721" template="acorns.acorn02">
+    <properties>
+      <x>64.55777890973775</x>
+      <y>-849.1814539096106</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_23638.541158288717" template="acorns.acorn01">
+    <properties>
+      <x>591.8011202510975</x>
+      <y>-459.1707017508299</y>
+      <rotation>0.7641247773733854</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_92478.46500948071" template="acorns.acorn00">
+    <properties>
+      <x>1151.3972222546713</x>
+      <y>-506.4555057956041</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_68917.91513189673" template="acorns.acorn02">
+    <properties>
+      <x>1595.092225622182</x>
+      <y>-256.5215415589379</y>
+      <rotation>2.1341125882868672</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_69082.67308026552" template="acorns.acorn02">
+    <properties>
+      <x>1581.937806451831</x>
+      <y>-527.7869963421201</y>
+      <rotation>-1.0838970949836222</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_85124.8225197196" template="acorns.acorn00">
+    <properties>
+      <x>354.31052549989846</x>
+      <y>-676.0408556403991</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_97097.63159044087" template="acorns.acorn02">
+    <properties>
+      <x>-599.2071019293178</x>
+      <y>252.94555766032593</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_60165.877640247345" template="acorns.acorn00">
+    <properties>
+      <x>-55.96514267807106</x>
+      <y>490.080627569083</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_55380.23761473596" template="acorns.acorn02">
+    <properties>
+      <x>287.82737996326046</x>
+      <y>484.7477549324543</y>
+      <rotation>1.3954021062514737</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_65220.68241611123" template="acorns.acorn01">
+    <properties>
+      <x>837.4687863784604</x>
+      <y>327.9612994155699</y>
+      <rotation>2.251317551462108</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_65647.2728587687" template="acorns.acorn02">
+    <properties>
+      <x>-1233.9999999999982</x>
+      <y>357.00000000000017</y>
+      <rotation>0.8210972760767722</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_97242.45946854353" template="acorns.acorn01">
+    <properties>
+      <x>-1325.9999999999982</x>
+      <y>335.00000000000017</y>
+      <rotation>0.9661977367023928</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_66058.37047100067" template="acorns.acorn00">
+    <properties>
+      <x>-1412.9999996273702</x>
+      <y>277.0000000126623</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_24779.540114104748" template="acorns.acorn02">
+    <properties>
+      <x>-1347.2044532764592</x>
+      <y>-563.6056529430523</y>
+      <rotation>-1.3975506603425316</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_6563.885603100061" template="acorns.acorn01">
+    <properties>
+      <x>-1163.2044532764592</x>
+      <y>-676.6056529430523</y>
+      <rotation>1.4232282554809017</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_87701.76530815661" template="acorns.acorn00">
+    <properties>
+      <x>-888.2044532764592</x>
+      <y>-645.6056529430523</y>
+      <rotation>-0.9186249150378268</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_8298.606052994728" template="acorns.acorn02">
+    <properties>
+      <x>-951.2044532764592</x>
+      <y>-152.93898627638407</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_51387.6773416996" template="acorns.acorn00">
+    <properties>
+      <x>765.0796135554347</x>
+      <y>-96.19470568824553</y>
+      <rotation>0.6091634656607774</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_49302.91990749538" template="acorns.acorn02">
+    <properties>
+      <x>1069.0796135554347</x>
+      <y>3.8052943117544658</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn02_49254.26873378456" template="acorns.acorn02">
+    <properties>
+      <x>1266.0796135554347</x>
+      <y>91.80529431175447</y>
+      <rotation>0.6991925897216694</rotation>
+    </properties>
+  </entity>
+</world>

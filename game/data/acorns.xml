@@ -1,0 +1,76 @@
+<file>
+
+<template id="acorns.acorn00">
+    <component type="components.Texture">
+        <image>textures/acorns/acorn00.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>18, 19.99999998</anchor>
+        <isDynamic>false</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="POLYGON">
+            <density>2</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <sensorId>acorn</sensorId>
+            
+            <polygon>  -6, 25.00000002  , -18, 7.00000002  , -7, -12.99999998  , 17, -8.99999998  , 20, 16.00000002  , 14, 32.00000002 </polygon>
+        </fixture>
+        
+    </component>
+    <component type="components.Collectable" />
+</template>
+
+<template id="acorns.acorn01">
+    <component type="components.Texture">
+        <image>textures/acorns/acorn01.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>22.00000005, 30.00000024</anchor>
+        <isDynamic>false</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="POLYGON">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <sensorId>acorn</sensorId>
+            
+            <polygon>  -19.9166667961395, 12.8784711345117  , -19.1354167961395, -8.4930536762793  , -4.03125005, -14.8298609272559  , 15.2222213245117, -11.7743074909766  , 18.7118033862793, -0.940971614511724  , 11.8541640735352, 21.28124976  , -4.37847333186035, 31.6979165061395 </polygon>
+        </fixture>
+        
+    </component>
+    <component type="components.Collectable" />
+</template>
+
+<template id="acorns.acorn02">
+    <component type="components.Texture">
+        <image>textures/acorns/acorn02.png</image>
+    </component>
+    
+    <component type="components.Physics">
+        <fixedRotation>false</fixedRotation>
+        <anchor>27, 24.99999979</anchor>
+        <isDynamic>false</isDynamic>
+        <isKinematic>false</isKinematic>
+        <fixture type="POLYGON">
+            <density>1</density>
+            <restitution>0.2</restitution>
+            <friction>0.5</friction>
+            <isSensor>true</isSensor>
+            <sensorId>acorn</sensorId>
+            
+            <polygon>  -14.6736116409302, 21.847222538186  , -19.4479169845581, -1.74652841548829  , -19.8819446563721, -8.10069253902344  , -12.9375009536743, -14.090274600791  , 6.50694274902344, -17.215274600791  , 17.6006927490234, -3.48263910274414  , 13.5381927490234, 22.1944448663721  , 0.690971374511719, 30.5277781202325 </polygon>
+            <polygon>  17.6006927490234, -3.48263910274414  , 6.50694274902344, -17.215274600791  , 17.7048606872559, -11.6597211645117 </polygon>
+        </fixture>
+        
+    </component>
+    <component type="components.Collectable" />
+</template>
+
+</file>

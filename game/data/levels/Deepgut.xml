@@ -1,0 +1,75 @@
+<world id="Deepgut" title="Deepgut" template="levels.LevelOne">
+  <system type="systems.Box2DWorld">
+    <gravity>0</gravity>
+  </system>
+  <system type="systems.Camera"/>
+  <system type="systems.CodeRunner"/>
+  <system type="systems.StateMachineRunner"/>
+  <system type="systems.LevelLimits"/>
+  <entity name="background">
+    <properties>
+      <x>-317.99999999999875</x>
+      <y>-496.9999999999995</y>
+      <rotation>0</rotation>
+    </properties>
+    <component type="components.Texture">
+      <image>textures/backgrounds/deepgut.png</image>
+      <x>-500</x>
+      <y>-500</y>
+    </component>
+    <component type="components.Layer">
+      <noZoom>false</noZoom>
+      <z>10</z>
+      <fixed>true</fixed>
+    </component>
+  </entity>
+  <entity name="xyz_platforms.platform01_3" template="platforms.platform01">
+    <properties>
+      <x>212.85768308191177</x>
+      <y>-46.18611896034675</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_characters.girl_3" template="characters.girl">
+    <properties>
+      <x>194.0669943940872</x>
+      <y>-113.35004231655583</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_platforms.platform01_3" template="platforms.platform01">
+    <properties>
+      <x>-43.92658758435027</x>
+      <y>4.010131395021233</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="xyz_deepgut.deepgut_collision_3" template="deepgut.deepgut_collision">
+    <properties>
+      <x>266.00022198674156</x>
+      <y>-153.9999768085552</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn00_72316.91689230502" template="acorns.acorn00">
+    <properties>
+      <x>6.000002606729481</x>
+      <y>-294.9999959279857</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_acorns.acorn01_41456.14989101887" template="acorns.acorn01">
+    <properties>
+      <x>208.0000485121302</x>
+      <y>-377.9999242183965</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+  <entity name="ed_logic.margin_86948.74849170446" template="logic.margin">
+    <properties>
+      <x>168.00000000000125</x>
+      <y>170.00000000000048</y>
+      <rotation>0</rotation>
+    </properties>
+  </entity>
+</world>

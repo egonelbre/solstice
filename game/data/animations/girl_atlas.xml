@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:7570b1f9ce962b9fbecfec8d94e697a9$ -->
+<TextureAtlas imagePath="girl_atlas.png">
+    <SubTexture name="fall_001" x="434" y="1010" width="214" height="250"/>
+    <SubTexture name="fall_002" x="218" y="1010" width="214" height="250"/>
+    <SubTexture name="fall_003" x="2" y="1766" width="214" height="250"/>
+    <SubTexture name="jump_001" x="2" y="1514" width="214" height="250"/>
+    <SubTexture name="jump_002" x="2" y="1262" width="214" height="250"/>
+    <SubTexture name="jump_003" x="2" y="1010" width="214" height="250"/>
+    <SubTexture name="peak_001" x="650" y="758" width="214" height="250"/>
+    <SubTexture name="peak_002" x="434" y="758" width="214" height="250"/>
+    <SubTexture name="peak_003" x="218" y="758" width="214" height="250"/>
+    <SubTexture name="run_001" x="2" y="758" width="214" height="250"/>
+    <SubTexture name="run_002" x="650" y="506" width="214" height="250"/>
+    <SubTexture name="run_003" x="434" y="506" width="214" height="250"/>
+    <SubTexture name="run_004" x="218" y="506" width="214" height="250"/>
+    <SubTexture name="run_005" x="2" y="506" width="214" height="250"/>
+    <SubTexture name="run_006" x="650" y="254" width="214" height="250"/>
+    <SubTexture name="run_007" x="434" y="254" width="214" height="250"/>
+    <SubTexture name="run_008" x="218" y="254" width="214" height="250"/>
+    <SubTexture name="run_009" x="2" y="254" width="214" height="250"/>
+    <SubTexture name="run_010" x="650" y="2" width="214" height="250"/>
+    <SubTexture name="run_011" x="434" y="2" width="214" height="250"/>
+    <SubTexture name="run_012" x="218" y="2" width="214" height="250"/>
+    <SubTexture name="stand_001" x="2" y="2" width="214" height="250"/>
+</TextureAtlas>

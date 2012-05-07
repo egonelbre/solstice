@@ -1,0 +1,14 @@
+<TextureAtlas imagePath='atlas.png'>
+  <SubTexture name='run_00' x='0' y='0' height='150.5' width='87.0'/>
+  <SubTexture name='run_01' x='0' y='151' height='150.5' width='87.0'/>
+  <SubTexture name='run_02' x='0' y='302' height='150.5' width='87.0'/>
+  <SubTexture name='run_03' x='88' y='0' height='150.5' width='87.0'/>
+  <SubTexture name='run_04' x='176' y='0' height='150.5' width='87.0'/>
+  <SubTexture name='run_05' x='264' y='0' height='150.5' width='87.0'/>
+  <SubTexture name='run_06' x='352' y='0' height='150.5' width='87.0'/>
+  <SubTexture name='run_07' x='88' y='151' height='150.5' width='87.0'/>
+  <SubTexture name='run_08' x='88' y='302' height='150.5' width='87.0'/>
+  <SubTexture name='run_09' x='176' y='151' height='150.5' width='87.0'/>
+  <SubTexture name='run_10' x='176' y='302' height='150.5' width='87.0'/>
+  <SubTexture name='run_11' x='264' y='151' height='150.5' width='87.0'/>
+</TextureAtlas>

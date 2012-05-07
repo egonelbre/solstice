@@ -1,0 +1,40 @@
+Simple plain text exporter for demo purposes
+
+See http://www.grantlee.org/apidox/for_themers.html for more information
+
+Custom values (from the <bodies> section)
+    Grav: {{global.gravitational_acceleration}}
+
+List of all bodies:
+{% for body in bodies %}
+
+    Name:               {{body.name}}
+    Custom values (from the <bodies> section):
+        Identifier:     {{body.identifier}}
+        FixedRotation:  {% if body.fixedRotation %}YES{% else %}NO{% endif %}
+
+        AnchorPointRel: { {{body.anchorPointRel.x|floatformat:3}},{{body.anchorPointRel.y|floatformat:3}} }
+        AnchorPointAbs: { {{body.anchorPointAbs.x|floatformat:3}},{{body.anchorPointAbs.y|floatformat:3}} }
+        Size:           { {{body.size.width|floatformat:3}},{{body.size.height|floatformat:3}} }
+    
+    List of all fixtures:
+{% for fixture in body.fixtures %}
+        ----------------------------------------------------------
+        fixtureType:             {{fixture.type}}
+
+        Box2D special values (only available if box2d is active):
+            filter_groupIndex:   {{fixture.filter_groupIndex}}
+            filter_categoryBits: {{fixture.filter_categoryBits}}
+            filter_maskBits:     {{fixture.filter_maskBits}}
+
+        Custom values (from the <fixtures> section):
+            density:             {{fixture.density}}
+            friction:            {{fixture.friction}}
+            restitution:         {{fixture.restitution}}
+            isSensor:            {% if fixture.isSensor %}YES{% else %}NO{% endif %}
+        
+        List of Polygons:
+{% for polygon in fixture.polygons %}
+            {% for point in polygon %} {% if not forloop.first %}, {% endif %}({{point.x}}, {{point.y}}) {% endfor %}{% endfor %}
+{% endfor %}
+{% endfor %}

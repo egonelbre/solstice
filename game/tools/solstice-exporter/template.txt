@@ -1,0 +1,34 @@
+<file>
+{% for body in bodies %}
+<template id="{{global.namespace}}.{{body.name}}">
+    {% if body.hasAnimations %}
+    <component type="components.AnimationSound">
+    </component>
+    <component type="components.Animation">
+        <defaultAnimation>{{body.defaultAnimation}}</defaultAnimation>
+        <spritesheet>{{body.sprites}}</spritesheet>
+        <atlas>{{body.atlas}}</atlas>
+    </component>
+    {% else %}<component type="components.Texture">
+        <image>textures/{{global.namespace}}/{{body.name}}.png</image>
+    </component>
+    {% endif %}
+    <component type="components.Physics">
+        <fixedRotation>{{body.fixedRotation}}</fixedRotation>
+        <anchor>{{body.anchorPointAbs.x}}, {{body.anchorPointAbs.y}}</anchor>
+        <isDynamic>{{body.isDynamic}}</isDynamic>
+        <isKinematic>{{body.isKinematic}}</isKinematic>
+        {% for fixture in body.fixtures %}<fixture type="{{fixture.type}}">
+            <density>{{fixture.density}}</density>
+            <restitution>{{fixture.restitution}}</restitution>
+            <friction>{{fixture.friction}}</friction>
+            <isSensor>{{fixture.isSensor}}</isSensor>{% if fixture.isSensor %}
+            <sensorId>{{fixture.sensorId}}</sensorId>
+            {% endif %}{% if fixture.isCircle %}<circle radius="{{fixture.radius}}" x="{{fixture.center.x}}" y="{{fixture.center.y}}" />{% else %}{% for polygon in fixture.polygons %}
+            <polygon>{% for point in polygon %} {% if not forloop.first %},{% endif %} {{point.x}}, {{point.y}} {% endfor %}</polygon>{% endfor %}{% endif %}
+        </fixture>
+        {% endfor %}
+    </component>
+</template>
+{% endfor %}
+</file>

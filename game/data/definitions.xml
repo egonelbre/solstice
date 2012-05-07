@@ -1,0 +1,36 @@
+<definitions>
+    <templates>
+        <file filename="acorns.xml" />
+        <file filename="platforms.xml" />
+        <file filename="objects.xml" />
+        <file filename="characters.xml" />
+        <file filename="branches_1.xml" />
+        <file filename="logic.xml" />
+    </templates>
+    <worlds>
+        <file filename="levels/construction.xml" />
+    </worlds>
+    <soundtrack>
+        <music id="still"    title="Still" filename="music/still.mp3" />
+        <!--<music id="naive"    title="Naive" filename="music/naive.mp3" />
+        <music id="moving"   title="Moving" filename="music/moving.mp3" />
+        <music id="moodsam"  title="Moodsam" filename="music/moodsam.mp3" />
+        <music id="oldskool" title="Old Skool" filename="music/oldskool.mp3" />
+        <music id="moodsam"  title="Moodsam" filename="music/moodsam.mp3" />
+        <music id="jamm"     title="Jamm Variant" filename="music/jammvariant.mp3" />
+        <music id="dawn"     title="Dawn of a New World" filename="music/dawnofanewworld.mp3" />-->
+    </soundtrack>
+	
+	<def id="seonmingiasi">
+		<kurk name="marineeritud"> </kurk>
+		<kapsas valie="asddsf" />
+	</def>
+	
+	<usedef id="seonmingiasi" />
+	<usedef id="seonmingiasi" />
+	
+    <fonts>
+        <font id="fonts/Ubuntu-R.ttf" filename="fonts/Ubuntu-R.ttf" embedAsCFF="false" fontFamily="Ubuntu" />
+    </fonts>
+</definitions>
+

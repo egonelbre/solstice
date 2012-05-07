@@ -1,0 +1,2 @@
+    [Embed(source = "%FILENAME%", mimeType="application/octet-stream")]
+    public static const %NAME% : Class;
